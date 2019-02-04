@@ -28,7 +28,17 @@ controller：控制器
        
 四、jpa的查询关键字
 
-比如：And,Or,Between,等等
+比如：
+
+And  findByNameAndAddress
+
+Or findByNameOrAddress
+
+Between findByAgeBetween
+
+After findByStartDateAfter
+
+等等
 
 五、访问url
 
