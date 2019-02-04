@@ -75,3 +75,9 @@ http://127.0.0.1:8080/student/nameLike?name=牛魔
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
        
+
+七、mysql删除表
+
+delete from 表名；//清空表的内容
+
+drop table 表名；//删除表
