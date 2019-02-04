@@ -21,6 +21,47 @@ controller：控制器
 }
 
 1、自定义接口，继承JpaRepository<Student,Integer>，Student类作为参数
+
 2、findByName，findByNameAndAddress，findByNameLike方法只需要声明一下
+
 3、返回类型，List<Student> findByNameAndAddress(String name, String address);
+       
+四、jpa的查询关键字
+
+比如：And,Or,Between,等等
+
+五、访问url
+
+1、save，插入操作
+
+http://127.0.0.1:8080/student/save
+
+2、模糊查询
+
+http://127.0.0.1:8080/student/nameLike?name=牛魔
+
+六、pom的依赖
+
+1、中文的配置
+       
+       	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+      
+2、jpa的依赖
+
+       	<!-- 添加Spring Data JPA依赖 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+              
+ 3、springweb启动器的依赖
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
        
