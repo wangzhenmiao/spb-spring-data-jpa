@@ -19,3 +19,8 @@ controller：控制器
 
     List<Student> findByNameLike(String name);
 }
+
+1、自定义接口，继承JpaRepository<Student,Integer>，Student类作为参数
+2、findByName，findByNameAndAddress，findByNameLike方法只需要声明一下
+3、返回类型，List<Student> findByNameAndAddress(String name, String address);
+       
